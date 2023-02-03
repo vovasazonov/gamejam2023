@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Cherry_Mat
+  m_Name: Shurikan_Mat
   m_Shader: {fileID: -6465566751694194690, guid: 08b7e3b715cacb0458c6850da3c828fa,
     type: 3}
   m_ValidKeywords: []
@@ -35,11 +35,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseColor_Map:
-        m_Texture: {fileID: 2800000, guid: 235ed364c97645d478f028a007c54543, type: 3}
+        m_Texture: {fileID: 2800000, guid: 97952b50999de184ba986e04ecd0fdcd, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Emission_Map:
-        m_Texture: {fileID: 2800000, guid: 8af03eddc5f736b4089f6f9a251737e3, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal_Map:
@@ -61,7 +61,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _BaseColor_Intensity: 1.5
-    - _Emission_Intensity: 0.36
+    - _Emission_Intensity: 0.001
     - _Emission_Speed: 5
     - _Fresnel_Intensity: 5.5
     - _Fresnel_Power: 3.46
@@ -71,5 +71,5 @@ Material:
     - _Scale_Speed: 1
     - _Smoothness: 0.763
     m_Colors:
-    - _Emission_Color: {r: 7.659664, g: 0.06994321, b: 0, a: 1}
+    - _Emission_Color: {r: 2.508326, g: 2.508326, b: 2.508326, a: 1}
   m_BuildTextureStacks: []
