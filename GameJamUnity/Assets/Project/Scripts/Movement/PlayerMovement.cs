@@ -51,7 +51,7 @@ namespace Project.Scripts.Movement
             }
         }
 
-        private void Update()
+        private void FixedUpdate()
         {
             if (_isActive)
             {
