@@ -10,9 +10,7 @@ namespace Project.Scripts.Items
             
             if (tree.IsLock)
             {
-                var pointsItem = gameObject.AddComponent<PointsItem>();
-                pointsItem.Player = playerType;
-                pointsItem.Points = Points;
+                PointsCounter.Instance.InsertPoints(playerType, Points);
                 
                 tree.Unlock();
                 Destroy(this);
