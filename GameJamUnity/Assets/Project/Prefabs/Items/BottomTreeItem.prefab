@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BottomTreeItem
       objectReference: {fileID: 0}
+    - target: {fileID: 7195028437066072523, guid: 8515f7cb82b664a0695788a641190d20,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7195028437066072524, guid: 8515f7cb82b664a0695788a641190d20,
         type: 3}
       propertyPath: m_RootOrder
@@ -87,3 +92,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39337ced851f422a9c49ae56e49f7715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rootItemPrefab: {fileID: 6468788269710618032, guid: 62218204da971429ea50796fea23bd01,
+    type: 3}
+  _playerThatRelatedTo: {fileID: 0}
