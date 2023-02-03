@@ -115,7 +115,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7465909605766951446}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -167,7 +167,7 @@ MonoBehaviour:
   _rightBottomCorner: {fileID: 5724334277731946555}
   _rightUpperCorner: {fileID: 310625497558779136}
   TotalItems: 0
-  Items: []
+  ItemsInfos: []
 --- !u!1 &8037448501911480974
 GameObject:
   m_ObjectHideFlags: 0
