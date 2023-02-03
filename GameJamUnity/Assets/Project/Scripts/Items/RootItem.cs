@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -13,7 +12,6 @@ namespace Project.Scripts.Items
 
         protected override void OnAction(PlayerType playerType)
         {
-            throw new System.NotImplementedException();
         }
 
         public void SetFollowStartRoot(Transform transform)
