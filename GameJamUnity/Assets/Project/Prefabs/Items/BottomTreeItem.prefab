@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1380061473863423816
+--- !u!1001 &518244718834454642
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 7195028437066072521, guid: 8515f7cb82b664a0695788a641190d20,
         type: 3}
       propertyPath: m_Name
-      value: FoodItem
+      value: BottomTreeItem
       objectReference: {fileID: 0}
     - target: {fileID: 7195028437066072524, guid: 8515f7cb82b664a0695788a641190d20,
         type: 3}
@@ -69,21 +69,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8515f7cb82b664a0695788a641190d20, type: 3}
---- !u!1 &8142251558394697345 stripped
+--- !u!1 &7271286918429659579 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7195028437066072521, guid: 8515f7cb82b664a0695788a641190d20,
     type: 3}
-  m_PrefabInstance: {fileID: 1380061473863423816}
+  m_PrefabInstance: {fileID: 518244718834454642}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1225944316907522163
+--- !u!114 &398125834556260688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8142251558394697345}
+  m_GameObject: {fileID: 7271286918429659579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dfc379984434c7389de002f544b42e0, type: 3}
+  m_Script: {fileID: 11500000, guid: 39337ced851f422a9c49ae56e49f7715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
