@@ -25,7 +25,6 @@ namespace Project.Scripts.Movement
         protected override void OnActivated()
         {
             _rigidbody.useGravity = false;
-            _rigidbody.isKinematic = true;
         }
 
         private void Start()
