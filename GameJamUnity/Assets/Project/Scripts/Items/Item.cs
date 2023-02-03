@@ -1,3 +1,4 @@
+using System;
 using Project.Scripts;
 using UnityEngine;
 
@@ -5,7 +6,7 @@ public abstract class Item : MonoBehaviour
 {
     private PlayerType _inAreaPlayer;
     private bool _isInAreaPlayer;
-    
+
     private void OnCollisionEnter(Collision other)
     {
         if (!_isInAreaPlayer && other.gameObject.TryGetComponent(out PlayerTypeComponent playerType))
@@ -29,7 +30,7 @@ public abstract class Item : MonoBehaviour
 
     private void Update()
     {
-        if (_isInAreaPlayer)
+        if (_isInAreaPlayer && PlayerInputService.IsActionClicked(_inAreaPlayer))
         {
             OnAction(_inAreaPlayer);
         }
