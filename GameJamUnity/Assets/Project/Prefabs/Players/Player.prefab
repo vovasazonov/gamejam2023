@@ -193,6 +193,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Friend01_Rigged
       objectReference: {fileID: 0}
+    - target: {fileID: 5474452747237077441, guid: cd94b1d38af83d548bbfe18129236047,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a87f0e5a42876ac45a88f16fe10eb91b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd94b1d38af83d548bbfe18129236047, type: 3}
 --- !u!4 &429461670653205682 stripped
