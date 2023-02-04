@@ -31,6 +31,7 @@ namespace Project.Scripts.Movement
             var jump = PlayerInputService.IsActionPressing(_playerType);
             if (jump & _isGrounded)
             {
+                PlayersAnimationInvoker.PlayJump(_playerType);
                 _rigidbody.AddForce(new Vector3(0, _jumpForce, 0), ForceMode.Impulse);
             }
 

@@ -33,6 +33,7 @@ public abstract class Item : MonoBehaviour
         if (_isInAreaPlayer && PlayerInputService.IsActionClicked(_inAreaPlayer))
         {
             OnAction(_inAreaPlayer);
+            PlayersAnimationInvoker.PlayTake(_inAreaPlayer);
         }
     }
 }

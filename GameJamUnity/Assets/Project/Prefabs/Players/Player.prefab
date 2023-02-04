@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3791096111281352429}
   - component: {fileID: 4116508066819224573}
   - component: {fileID: 2760248502791685546}
+  - component: {fileID: 251082398818607293}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -151,6 +152,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerType: 0
   Animator: {fileID: 0}
+--- !u!114 &251082398818607293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7753327124062257303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa2719759534ba6919f40b84b402e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerType: {fileID: 5396764038074746842}
 --- !u!1001 &159226921412309189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -218,6 +232,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Friend02_Rigged
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 489baf2f4762f5b4e8cae118fe1d5c4f,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4add1c7fca85cff46b78c751c683b80c, type: 2}
     - target: {fileID: 9157184321241172385, guid: 489baf2f4762f5b4e8cae118fe1d5c4f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -303,6 +322,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 72a3c6888254560419ce6a0d93f59b99, type: 2}
+    - target: {fileID: 5866666021909216657, guid: cd94b1d38af83d548bbfe18129236047,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 29f95df5726ea6048a5a35d7f43d3ba3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd94b1d38af83d548bbfe18129236047, type: 3}
 --- !u!4 &429461670653205682 stripped
