@@ -581,7 +581,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0.3982807, y: -0.33320627, z: 0.15801309, w: 0.8398695}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -2875,8 +2875,8 @@ MonoBehaviour:
     y: 0
     width: 454
     height: 541.5
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -2934,14 +2934,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.83273554
+    - e00: 0.35943758
       e01: 0
       e02: 0
-      e03: -64.64023
+      e03: 35.943764
       e10: 0
-      e11: 0.83273554
+      e11: 0.35943758
       e12: 0
-      e13: 77.27478
+      e13: 82.85585
       e20: 0
       e21: 0
       e22: 1
