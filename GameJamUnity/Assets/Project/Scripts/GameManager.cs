@@ -63,9 +63,9 @@ public class GameManager : MonoBehaviour
         AudioManager.Instance.PlayAudio(AudioManager.Sound.ThreeSecondsRemainSound);
     }
 
-    void DoEndGameSequance()
+    public void DoEndGameSequance(PlayerType playerWon, PlayerType playerLose)
     {
-        uiControl.DoShowEndGameScreen("P@", "P%");
+        uiControl.DoShowEndGameScreen(playerWon.ToString(), playerLose.ToString());
     }
 
 }
