@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace Project.Scripts
@@ -7,6 +8,8 @@ namespace Project.Scripts
         private Dictionary<PlayerType, int> _points = new();
 
         private static PointsCounter _instance;
+
+        public event Action Updated;
         
         public static PointsCounter Instance
         {
@@ -27,6 +30,7 @@ namespace Project.Scripts
         public void InsertPoints(PlayerType player, int amount)
         {
             _points[player] += amount;
+            Updated?.Invoke();
         }
 
         public int GetPoints(PlayerType playerType)
