@@ -179,10 +179,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leafPrefab: {fileID: 1265992963545320215, guid: 90a77ba7243ff4b35980a5924b63769f,
     type: 3}
-  _maxAngel: 60
+  _maxAngel: 70
   _minAngel: 45
-  _betweenLeafsHeight: 0.2
-  _distanceFromTree: 0.6
+  _betweenLeafsHeight: 2
+  _distanceFromTree: 1.3
   _bottomPoint: {fileID: 5042932764734695145}
   _topPoint: {fileID: 3079607890923478928}
   _centerPoint: {fileID: 8924800920986646240}
