@@ -6,6 +6,7 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     private static AudioManager _audioManager;
+    private static List<AudioSourceObject> _soundChoosedNow = new List<AudioSourceObject>();
     [SerializeField] private AudioSourceObject _audioSourcePrefab;
 
     public List<SoundByType> Clips;
@@ -30,7 +31,8 @@ public class AudioManager : MonoBehaviour
 
     public enum Sound
     {
-        FirstPhaseBackgroundMusic
+        FirstPhaseBackgroundMusic,
+        SecondPhaseBackgroundMusic
     }
 
     public void PlayAudio(Sound sound)
@@ -44,7 +46,19 @@ public class AudioManager : MonoBehaviour
             }
         }
 
-        var audioSource = Instantiate(_audioSourcePrefab);
-        audioSource.PlaySound(audioClip);
+        var audioSourceObject = Instantiate(_audioSourcePrefab);
+        audioSourceObject.PlaySound(audioClip);
+        _soundChoosedNow.Add(audioSourceObject);
+    }
+
+    public static void StopAllAudio()
+    {
+        if (_soundChoosedNow != null)
+        {
+            foreach (var element in _soundChoosedNow)
+            {
+                element.StopSound();
+            }
+        }
     }
 }
