@@ -21,7 +21,24 @@ public abstract class Item : MonoBehaviour
     {
         if (_isInAreaPlayer && other.gameObject.TryGetComponent(out PlayerTypeComponent playerType) && playerType == _isInAreaPlayer)
         {
-            Debug.Log("exist");
+            _isInAreaPlayer = false;
+        }
+    }
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        if (!_isInAreaPlayer && other.gameObject.TryGetComponent(out PlayerTypeComponent playerType))
+        {
+            Debug.Log("enter");
+            _inAreaPlayer = playerType.Player;
+            _isInAreaPlayer = true;
+        }
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (_isInAreaPlayer && other.gameObject.TryGetComponent(out PlayerTypeComponent playerType) && playerType == _isInAreaPlayer)
+        {
             _isInAreaPlayer = false;
         }
     }
