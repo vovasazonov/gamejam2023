@@ -8,7 +8,9 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<ChasingCamera> _chasingCameras;
     public event Action Phase2Started;
-    
+
+    public UIControllerSC uiController;
+
     public static GameManager Instance { get; private set; }
 
     private void Awake()
@@ -55,4 +57,10 @@ public class GameManager : MonoBehaviour
         
         Phase2Started?.Invoke();
     }
+
+    void OnGameEnded()
+    {
+        uiController.DoShowWinScreen("P1", "P2");
+    }
+
 }
