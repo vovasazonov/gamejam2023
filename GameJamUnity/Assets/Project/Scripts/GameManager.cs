@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
         {
             element.ChangeCameraModeToFirstPhase();
         }
+    
     }
 
     private void SetActivePhase2()

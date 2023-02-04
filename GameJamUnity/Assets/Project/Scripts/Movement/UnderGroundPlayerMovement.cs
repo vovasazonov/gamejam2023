@@ -34,10 +34,10 @@ namespace Project.Scripts.Movement
             _camera.ChangeCameraModeToFirstPhase();
         }
 
-        private void Start()
-        {
-            SetActiveUpperGround(false);
-            SetActiveUnderGround(true);
-        }
+        // private void Start()
+        // {
+        //     SetActiveUpperGround(false);
+        //     SetActiveUnderGround(true);
+        // }
     }
 }
