@@ -46,7 +46,7 @@ namespace Project.Scripts.Movement
             //         Vector3.MoveTowards(transform.position, _center.position, _speed * Time.deltaTime * depth);
             // }
 
-            transform.RotateAround(_center.position, Vector3.up, -horizontal);
+            transform.RotateAround(_center.position, Vector3.up, -horizontal * _speed);
         }
 
         protected override void OnActivated()
