@@ -270,6 +270,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64971e97dbaf0f94fb37eeb3f22460e7, type: 3}
+--- !u!4 &205826428 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6751737348833109523, guid: 64971e97dbaf0f94fb37eeb3f22460e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 205826427}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &205826429 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8924800920986646240, guid: 64971e97dbaf0f94fb37eeb3f22460e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 205826427}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +416,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4116508066819224573, guid: 1aac81bd763ef4542925fb6de2a9a6a7,
+        type: 3}
+      propertyPath: _center
+      value: 
+      objectReference: {fileID: 834800431}
+    - target: {fileID: 4116508066819224573, guid: 1aac81bd763ef4542925fb6de2a9a6a7,
+        type: 3}
+      propertyPath: _startPosition
+      value: 
+      objectReference: {fileID: 834800430}
     - target: {fileID: 4412696029883340627, guid: 1aac81bd763ef4542925fb6de2a9a6a7,
         type: 3}
       propertyPath: m_NormalizedViewPortRect.x
@@ -639,6 +661,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64971e97dbaf0f94fb37eeb3f22460e7, type: 3}
+--- !u!4 &834800430 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6751737348833109523, guid: 64971e97dbaf0f94fb37eeb3f22460e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 834800429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &834800431 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8924800920986646240, guid: 64971e97dbaf0f94fb37eeb3f22460e7,
+    type: 3}
+  m_PrefabInstance: {fileID: 834800429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &917431665 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5701823665477914415, guid: 234bcf1016985664186759f127530402,
@@ -1295,6 +1329,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4116508066819224573, guid: 1aac81bd763ef4542925fb6de2a9a6a7,
+        type: 3}
+      propertyPath: _center
+      value: 
+      objectReference: {fileID: 205826429}
+    - target: {fileID: 4116508066819224573, guid: 1aac81bd763ef4542925fb6de2a9a6a7,
+        type: 3}
+      propertyPath: _startPosition
+      value: 
+      objectReference: {fileID: 205826428}
     - target: {fileID: 4412696029883340627, guid: 1aac81bd763ef4542925fb6de2a9a6a7,
         type: 3}
       propertyPath: m_NormalizedViewPortRect.x
