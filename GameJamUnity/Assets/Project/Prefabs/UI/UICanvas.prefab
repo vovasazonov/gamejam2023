@@ -284,7 +284,7 @@ GameObject:
   - component: {fileID: 1873001041}
   - component: {fileID: 1873001040}
   m_Layer: 5
-  m_Name: WinnerNameTMP
+  m_Name: LoserNameTMP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -424,7 +424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1933942086
 RectTransform:
   m_ObjectHideFlags: 0
@@ -741,7 +741,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 917431670}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIControllerSC, Assembly-CSharp
         m_MethodName: DoPauseGame
         m_Mode: 1
@@ -843,8 +843,7 @@ GameObject:
   - component: {fileID: 5701823665477914413}
   - component: {fileID: 5701823665477914412}
   - component: {fileID: 6138917114496468704}
-  - component: {fileID: 917431670}
-  - component: {fileID: 4329088706863496513}
+  - component: {fileID: 5701823666373061221}
   m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
@@ -951,7 +950,7 @@ MonoBehaviour:
   _timerInput: {fileID: 5701823667050675198}
   _timeViewText: {fileID: 5701823666458112059}
   _volume: {fileID: 5701823666604743518}
---- !u!114 &917431670
+--- !u!114 &5701823666373061221
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -964,19 +963,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PausePanel: {fileID: 5701823667237014669}
---- !u!114 &4329088706863496513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5701823665477914415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c99d97514ba42d3499aad35b4236e1c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PausePanel: {fileID: 5701823667237014669}
+  WinPanel: {fileID: 1933942085}
+  winnerNameTMP: {fileID: 2055877063}
+  loserNameTMP: {fileID: 1873001040}
 --- !u!1 &5701823665484818630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,7 +1395,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4329088706863496513}
+      - m_Target: {fileID: 5701823666373061221}
         m_TargetAssemblyTypeName: UIControllerSC, Assembly-CSharp
         m_MethodName: DoGoBackToGame
         m_Mode: 1
@@ -2416,7 +2405,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4329088706863496513}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIControllerSC, Assembly-CSharp
         m_MethodName: DoPauseGame
         m_Mode: 1
@@ -3094,7 +3083,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5701823667386505770
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3198,7 +3187,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4329088706863496513}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UIControllerSC, Assembly-CSharp
         m_MethodName: DoQuitGame
         m_Mode: 1

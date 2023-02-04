@@ -11,7 +11,13 @@ namespace Project.Scripts.Ui
         [SerializeField] private TextMeshProUGUI _timeViewText;
         [SerializeField] private Slider _volume;
         private int _lastTime;
-        
+
+        [SerializeField] GameObject PausePanel;
+        [SerializeField] GameObject WinPanel;
+
+        [SerializeField] TextMeshProUGUI winnerNameTMP;
+        [SerializeField] TextMeshProUGUI loserNameTMP;
+
         public void Quit()
         {
             Application.Quit();
@@ -48,6 +54,35 @@ namespace Project.Scripts.Ui
         private void Update()
         {
             UpdateTimeView();
+        }
+
+        public void DoPauseGame()
+        {
+            Debug.Log("in");
+
+            PausePanel.SetActive(true);
+
+            //Time.timeScale = 0;
+        }
+
+        public void DoGoBackToGame()
+        {
+            PausePanel.SetActive(false);
+
+            Time.timeScale = 1;
+        }
+
+        public void DoShowEndGameScreen(string winName, string loseName)
+        {
+            WinPanel.SetActive(true);
+
+            winnerNameTMP.text = winName;
+            loserNameTMP.text = loseName;
+        }
+
+        public void DoQuitGame()
+        {
+            Application.Quit();
         }
 
         private void UpdateTimeView()
