@@ -1,9 +1,4 @@
-using System;
-using System.Linq;
-using System.Reflection;
 using UnityEngine;
-using UnityEditor.UI;
-using UnityEditor.UIElements;
 using TMPro;
 
 public class UIControllerSC : MonoBehaviour

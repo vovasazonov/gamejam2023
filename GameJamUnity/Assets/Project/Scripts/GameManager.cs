@@ -10,12 +10,13 @@ public class GameManager : MonoBehaviour
     public event Action Phase2Started;
 
     [SerializeField] UIControllerSC uiControl;
-    
+
     public static GameManager Instance { get; private set; }
 
     private void Awake()
     {
         Instance = this;
+        Timer.Instance.ThreeSecondRemain += OnTreeSecondsRemain;
     }
 
     private void Start()
@@ -54,10 +55,10 @@ public class GameManager : MonoBehaviour
         {
             element.ChangeCameraModeToSecondPhase();
         }
-        
+
         Phase2Started?.Invoke();
     }
-    
+
     private void OnTreeSecondsRemain()
     {
         AudioManager.Instance.PlayAudio(AudioManager.Sound.ThreeSecondsRemainSound);
@@ -67,5 +68,4 @@ public class GameManager : MonoBehaviour
     {
         uiControl.DoShowEndGameScreen(playerWon.ToString(), playerLose.ToString());
     }
-
 }
