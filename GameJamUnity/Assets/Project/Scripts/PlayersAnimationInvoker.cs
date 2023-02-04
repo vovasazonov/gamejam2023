@@ -8,8 +8,9 @@ namespace Project.Scripts
     {
         public PlayerType PlayerType;
         public Animator Animator;
-        
+
         private static Dictionary<PlayerType, PlayersAnimationInvoker> _instances = new();
+        private static bool _isAnimateable = true;
 
         private void Awake()
         {
@@ -18,35 +19,45 @@ namespace Project.Scripts
 
         public static void PlayWalk(PlayerType playerType)
         {
-            _instances[playerType].Animator.Play("Walk");
+            if (_isAnimateable)
+            {
+                _instances[playerType].Animator.Play("Walk");
+            }
         }
-        
+
         public static void PlayJump(PlayerType playerType)
         {
-            _instances[playerType].Animator.Play("Jump");
-
+            if (_isAnimateable)
+            {
+                _instances[playerType].Animator.Play("Jump");
+            }
         }
 
         public static void PlayTake(PlayerType playerType)
         {
-            _instances[playerType].Animator.Play("Take");
-
+            if (_isAnimateable)
+            {
+                _instances[playerType].Animator.Play("Take");
+            }
         }
 
         public static void PlayIdle(PlayerType playerType)
         {
-            _instances[playerType].Animator.Play("Idle");
-
+            if (_isAnimateable)
+            {
+                _instances[playerType].Animator.Play("Idle");
+            }
         }
 
         public static void PlayWon(PlayerType playerType)
         {
-            _instances[playerType].Animator.Play("Won");
-
+            _isAnimateable = false;
+            _instances[playerType].Animator.Play("Win");
         }
 
         public static void PlayLose(PlayerType playerType)
         {
+            _isAnimateable = false;
             _instances[playerType].Animator.Play("Lose");
         }
     }

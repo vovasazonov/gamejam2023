@@ -35,6 +35,7 @@ namespace Project.Scripts
             float currentHeight = 0;
             float totalHeight = _topPoint.position.y - _bottomPoint.position.y;
             var hasLastLeaf = false;
+            Leaf lastLeaf = null;
             var lastAngle = 0f;
             var randomBorder = 50;
             
@@ -63,7 +64,10 @@ namespace Project.Scripts
                 leaf.transform.RotateAround(_centerPoint.position, Vector3.up, angelRotate);
                 hasLastLeaf = true;
                 lastAngle = angelRotate;
+                lastLeaf = leaf.GetComponent<Leaf>();
             }
+            
+            lastLeaf.SetActiveBellWon();
         }
     }
 }
