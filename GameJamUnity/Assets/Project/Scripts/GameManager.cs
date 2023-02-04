@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Project.Scripts;
 using Project.Scripts.Movement;
 using UnityEngine;
 
@@ -32,6 +33,8 @@ public class GameManager : MonoBehaviour
 
     private void SetActivePhase2()
     {
+        LeafsGenerator.StartGenerate();
+        ;
         PlayerMovement.SetActiveUnderGround(false);
         PlayerMovement.SetActiveUpperGround(true);
         foreach (var element in _chasingCameras)
