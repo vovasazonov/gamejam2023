@@ -21,15 +21,7 @@ namespace Project.Scripts.AudioMananger
 
         private void Update()
         {
-            if (_isStartedPlaying)
-            {
-                _audioSourceComponent.volume = AudioManager.Instance.Volume;
-
-                if (!_audioSourceComponent.isPlaying)
-                {
-                    Destroy(this);
-                }
-            }
+            _audioSourceComponent.volume = AudioManager.Instance.Volume;
         }
     }
 }
