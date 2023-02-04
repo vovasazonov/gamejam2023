@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -23,10 +24,13 @@ namespace Project.Scripts.Movement
 
             var input = new Vector3(horizontal, vertical, 0);
 
-            _rigidbody.MovePosition(transform.position +
+            var position = transform.position;
+            position.z = 0;
+            
+            _rigidbody.MovePosition(position +
                                     input.normalized * input.normalized.magnitude * _speed * Time.deltaTime);
-
-            transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+            
+            
         }
 
         protected override void OnActivated()
