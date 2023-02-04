@@ -21,8 +21,8 @@ public class GameManager : MonoBehaviour
 
     private void SetActivePhase1()
     {
+        PlayerMovement.SetActiveUpperGround(false);
         PlayerMovement.SetActiveUnderGround(true);
-        // PlayerMovement.SetActiveUpperGround(false);
         foreach (var element in _chasingCameras)
         {
             element.ChangeCameraModeToFirstPhase();
@@ -32,7 +32,7 @@ public class GameManager : MonoBehaviour
     private void SetActivePhase2()
     {
         PlayerMovement.SetActiveUnderGround(false);
-        // PlayerMovement.SetActiveUpperGround(true);
+        PlayerMovement.SetActiveUpperGround(true);
         foreach (var element in _chasingCameras)
         {
             element.ChangeCameraModeToSecondPhase();

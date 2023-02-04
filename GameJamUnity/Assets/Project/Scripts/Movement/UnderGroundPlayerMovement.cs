@@ -7,6 +7,7 @@ namespace Project.Scripts.Movement
     {
         [SerializeField] private Rigidbody _rigidbody;
         [SerializeField] private ChasingCamera _camera;
+        [SerializeField] private Transform _startPosition;
 
 
         protected override void Move()
@@ -29,11 +30,13 @@ namespace Project.Scripts.Movement
         protected override void OnActivated()
         {
             _rigidbody.useGravity = false;
+            transform.position = _startPosition.position;
             _camera.ChangeCameraModeToFirstPhase();
         }
 
         private void Start()
         {
+            SetActiveUpperGround(false);
             SetActiveUnderGround(true);
         }
     }
