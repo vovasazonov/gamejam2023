@@ -21,6 +21,8 @@ namespace Project.Scripts
                 {
                     PlayersAnimationInvoker.PlayLose(PlayerType.One);
                 }
+                
+                GameManager.Instance.DoEndGameSequance(playerWon, playerWon == PlayerType.One ? PlayerType.Two : PlayerType.One);
             }
         }
     }

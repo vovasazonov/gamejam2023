@@ -226,10 +226,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0c63fcff
-      m_LastClickedID: -236788
-      m_ExpandedIDs: 1e63fcffe467fcff4ca8fcfffca9fcff74f8fdff02fcfdfff4fcfdffd6dcfffff0f6ffff14faffff32faffff16fbffff
+      scrollPos: {x: 0, y: 956.5}
+      m_SelectedIDs: d0b1fbff
+      m_LastClickedID: 0
+      m_ExpandedIDs: 6c53fbffd0b2fbffe467fcff4ca8fcfffca9fcff74f8fdff02fcfdfff4fcfdffd6dcfffff0f6ffff14faffff32faffff16fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 1.5232399
     speed: 2
-    m_Value: 1.5232401
+    m_Value: 1.5232399
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -3041,14 +3041,14 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.72218776
+    - e00: 0.41007656
       e01: 0
       e02: 0
-      e03: -15.967804
+      e03: 104.770004
       e10: 0
-      e11: 0.72218776
+      e11: 0.41007656
       e12: 0
-      e13: 108.3777
+      e13: 135.76143
       e20: 0
       e21: 0
       e22: 1
@@ -3177,22 +3177,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Project/Animator_Controller
+    - Assets/Project/Prefabs/Items
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Project/Animator_Controller
+  - Assets/Project/Prefabs/Items
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/vladimir/Documents/repos/gamejam2023/GameJamUnity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 86730000
-    m_LastClickedID: 29574
-    m_ExpandedIDs: 0000000018720000527300008c7300009073000000ca9a3bffffff7f
+    m_SelectedIDs: 9c730000
+    m_LastClickedID: 29596
+    m_ExpandedIDs: 000000001872000052730000847300008c73000090730000c4b3000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -3245,24 +3245,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 0c63fcff
-    m_LastClickedInstanceID: -236788
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: d0b1fbff
+    m_LastClickedInstanceID: -282160
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e27d00004a730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Scripts
+      m_OriginalName: Scripts
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 29584
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 13}
     m_CreateAssetUtility:
@@ -3336,7 +3336,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -236788
+  m_LastSelectedObjectID: -282160
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
