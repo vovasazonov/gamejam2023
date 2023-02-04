@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9071818105321611473}
   - component: {fileID: 3486589000303714088}
+  - component: {fileID: 6741501848507406735}
   m_Layer: 0
   m_Name: leaf
   m_TagString: Untagged
@@ -86,3 +87,23 @@ SkinnedMeshRenderer:
     m_Center: {x: -0.00005087629, y: -0.061497666, z: 0.025631255}
     m_Extent: {x: 0.109711215, y: 0.13842851, z: 0.06403462}
   m_DirtyAABB: 0
+--- !u!95 &6741501848507406735
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8551845499304852075}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2ab2bb2b2652da14496b51bda02eacba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
