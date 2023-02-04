@@ -5,7 +5,9 @@ using UnityEngine;
 public class Timer : MonoBehaviour
 {
     public event Action TimeOver;
+    public event Action ThreeSecondRemain;
 
+    private bool _isSoundThreeSecondsStarted;
     private bool _isTimerStarted;
     private float _timePassed;
     [SerializeField] private float _timeShouldPass;
@@ -13,7 +15,7 @@ public class Timer : MonoBehaviour
     private static Timer _instance;
 
     public static Timer Instance => _instance;
-    
+
     private void Awake()
     {
         if (_instance == null)
@@ -44,6 +46,12 @@ public class Timer : MonoBehaviour
     public int ShowHowMuchTimePassed()
     {
         int timeLast = (_timeShouldPass - _timePassed).ConvertTo<int>();
+        if (timeLast == 4 && _isSoundThreeSecondsStarted == false)
+        {
+            ThreeSecondRemain?.Invoke();
+            _isSoundThreeSecondsStarted = true;
+        }
+
         return timeLast;
     }
 

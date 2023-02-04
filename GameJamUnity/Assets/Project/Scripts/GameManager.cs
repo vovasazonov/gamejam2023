@@ -57,6 +57,11 @@ public class GameManager : MonoBehaviour
         
         Phase2Started?.Invoke();
     }
+    
+    private void OnTreeSecondsRemain()
+    {
+        AudioManager.Instance.PlayAudio(AudioManager.Sound.ThreeSecondsRemainSound);
+    }
 
     void DoEndGameSequance()
     {
