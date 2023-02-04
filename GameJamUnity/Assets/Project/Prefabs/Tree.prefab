@@ -183,8 +183,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _leafPrefab: {fileID: 1265992963545320215, guid: 90a77ba7243ff4b35980a5924b63769f,
     type: 3}
-  _maxAngel: 70
-  _minAngel: 45
+  _maxAngel: 120
+  _minAngel: 30
   _betweenLeafsHeight: 2
   _distanceFromTree: 0.5
   _bottomPoint: {fileID: 5042932764734695145}
@@ -462,72 +462,72 @@ PrefabInstance:
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[0].scale.x
-      value: 0.1802571
+      value: 0.026956607
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[0].scale.y
-      value: 0.1802571
+      value: 0.026956607
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[1].scale.x
-      value: 0.10695707
+      value: -0.046343423
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[1].scale.y
-      value: 0.10695707
+      value: -0.046343423
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[2].scale.x
-      value: -0.119742915
+      value: -0.2730434
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[2].scale.y
-      value: -0.119742915
+      value: -0.2730434
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n1.scale.x
-      value: 0.1802571
+      value: 0.026956607
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n1.scale.y
-      value: 0.1802571
+      value: 0.026956607
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n2.scale.x
-      value: 0.10695707
+      value: -0.046343423
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n2.scale.y
-      value: 0.10695707
+      value: -0.046343423
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n1.scale.x
-      value: 0.10695707
+      value: -0.046343423
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n1.scale.y
-      value: 0.10695707
+      value: -0.046343423
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n2.scale.x
-      value: -0.119742915
+      value: -0.2730434
       objectReference: {fileID: 0}
     - target: {fileID: 719748503510175611, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n2.scale.y
-      value: -0.119742915
+      value: -0.2730434
       objectReference: {fileID: 0}
     - target: {fileID: 966561870574562069, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
@@ -572,112 +572,112 @@ PrefabInstance:
     - target: {fileID: 1546083799791560739, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[0].scale.x
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 1546083799791560739, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[0].scale.y
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 1546083799791560739, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[1].scale.x
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 1546083799791560739, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[1].scale.y
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 1546083799791560739, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n1.scale.x
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 1546083799791560739, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n1.scale.y
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 1546083799791560739, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n2.scale.x
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 1546083799791560739, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n2.scale.y
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[0].scale.x
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[0].scale.y
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[1].scale.x
-      value: 0.07365903
+      value: -0.18184178
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[1].scale.y
-      value: 0.07365903
+      value: -0.18184178
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[2].scale.x
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[2].scale.y
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n1.scale.x
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n1.scale.y
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n2.scale.x
-      value: 0.07365903
+      value: -0.18184178
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n2.scale.y
-      value: 0.07365903
+      value: -0.18184178
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n1.scale.x
-      value: 0.07365903
+      value: -0.18184178
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n1.scale.y
-      value: 0.07365903
+      value: -0.18184178
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n2.scale.x
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 1655408601554204505, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n2.scale.y
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 2984325923583662688, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
@@ -762,72 +762,72 @@ PrefabInstance:
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[0].scale.x
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[0].scale.y
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[1].scale.x
-      value: 0.04001254
+      value: -0.21548827
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[1].scale.y
-      value: 0.04001254
+      value: -0.21548827
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[2].scale.x
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[2].scale.y
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n1.scale.x
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n1.scale.y
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n2.scale.x
-      value: 0.04001254
+      value: -0.21548827
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n2.scale.y
-      value: 0.04001254
+      value: -0.21548827
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n1.scale.x
-      value: 0.04001254
+      value: -0.21548827
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n1.scale.y
-      value: 0.04001254
+      value: -0.21548827
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n2.scale.x
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 4311894144027166685, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n2.scale.y
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 5868420120677515751, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
@@ -842,72 +842,72 @@ PrefabInstance:
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[0].scale.x
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[0].scale.y
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[1].scale.x
-      value: 0.02210635
+      value: -0.23339446
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[1].scale.y
-      value: 0.02210635
+      value: -0.23339446
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[2].scale.x
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: nodes.Array.data[2].scale.y
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n1.scale.x
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n1.scale.y
-      value: 0.30042848
+      value: 0.044927675
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n2.scale.x
-      value: 0.02210635
+      value: -0.23339446
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[0].n2.scale.y
-      value: 0.02210635
+      value: -0.23339446
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n1.scale.x
-      value: 0.02210635
+      value: -0.23339446
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n1.scale.y
-      value: 0.02210635
+      value: -0.23339446
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n2.scale.x
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 6590837247919387560, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
       propertyPath: curves.Array.data[1].n2.scale.y
-      value: -0.19957152
+      value: -0.4550723
       objectReference: {fileID: 0}
     - target: {fileID: 6872913627034522026, guid: 90b9235401e78e245ac62eaf3f26cafb,
         type: 3}
