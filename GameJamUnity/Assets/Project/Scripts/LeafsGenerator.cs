@@ -51,7 +51,12 @@ namespace Project.Scripts
                 float angelRotate = 0;
                 if (hasLastLeaf)
                 {
-                    angelRotate = isSpawnInLeftSide ? lastAngle + _minAngel : lastAngle - _minAngel;
+                    var myPoints = PointsCounter.Instance.GetPoints(_playerOwner);
+                    var totalPoints = PointsCounter.Instance.GetPoints(PlayerType.One) + PointsCounter.Instance.GetPoints(PlayerType.Two);
+                    var rand = Random.Range(0, totalPoints);
+                    var angel = rand < myPoints ? _minAngel : _maxAngel;
+
+                    angelRotate = isSpawnInLeftSide ? lastAngle + angel : lastAngle - angel;
                     randomBorder = isSpawnInLeftSide ? randomBorder + 10 : randomBorder - 10;
                 }
                 leaf.transform.position = position;
