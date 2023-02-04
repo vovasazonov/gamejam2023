@@ -317,6 +317,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Friend01_Rigged
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd94b1d38af83d548bbfe18129236047,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5474452747237077441, guid: cd94b1d38af83d548bbfe18129236047,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
