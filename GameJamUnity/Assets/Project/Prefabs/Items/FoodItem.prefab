@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FoodItem
       objectReference: {fileID: 0}
+    - target: {fileID: 7195028437066072523, guid: 8515f7cb82b664a0695788a641190d20,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7195028437066072524, guid: 8515f7cb82b664a0695788a641190d20,
         type: 3}
       propertyPath: m_RootOrder
