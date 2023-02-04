@@ -4838,6 +4838,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 457200, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.43672138
+      objectReference: {fileID: 0}
+    - target: {fileID: 457200, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.43672135
+      objectReference: {fileID: 0}
+    - target: {fileID: 457200, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.43672135
+      objectReference: {fileID: 0}
+    - target: {fileID: 457200, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.012074572
       objectReference: {fileID: 0}
@@ -4876,6 +4888,39 @@ PrefabInstance:
     - target: {fileID: 457200, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 19818074, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
+      propertyPath: InitialModule.startSizeY.scalar
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059862204846148, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2076787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059862204846148, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2076787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4059862204846148, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.2076787
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280019066288762, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1679
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280019066288762, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1679006
+      objectReference: {fileID: 0}
+    - target: {fileID: 4280019066288762, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.1679006
+      objectReference: {fileID: 0}
+    - target: {fileID: 198478305071362738, guid: 87009d6220cf83e4d83a95436b7baadf,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 1.02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87009d6220cf83e4d83a95436b7baadf, type: 3}
