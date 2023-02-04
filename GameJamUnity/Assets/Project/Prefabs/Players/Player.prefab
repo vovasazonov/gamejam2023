@@ -128,6 +128,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
+  howFarCharCanBeFromTree: 4
+  howCloseCharCanBeToTree: 1
   _jumpForce: 360.89
   _center: {fileID: 0}
   _startPosition: {fileID: 0}

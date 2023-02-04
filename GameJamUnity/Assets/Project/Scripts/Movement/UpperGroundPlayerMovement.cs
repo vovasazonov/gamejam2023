@@ -6,8 +6,8 @@ namespace Project.Scripts.Movement
 {
     public class UpperGroundPlayerMovement : PlayerMovement
     {
-        // private float howFarCharCanBeFromTree = 10;
-        // private float howCloseCharCanBeToTree = 0.5f;
+        [SerializeField] private float howFarCharCanBeFromTree;
+        [SerializeField] private float howCloseCharCanBeToTree;
 
         private bool _isGrounded;
         [SerializeField] private float _jumpForce;
@@ -33,15 +33,25 @@ namespace Project.Scripts.Movement
             {
                 _rigidbody.AddForce(new Vector3(0, _jumpForce, 0), ForceMode.Impulse);
             }
-            
+
             if (depth != 0)
             {
-                transform.position =
-                    Vector3.MoveTowards(transform.position, _center.position, _speed * Time.deltaTime * depth);
+                float distance = Vector3.Distance(_center.position, transform.position);
+                if ((distance < howFarCharCanBeFromTree) && (depth < 0))
+                {
+                    transform.position =
+                        Vector3.MoveTowards(transform.position, _center.position, _speed * Time.deltaTime * depth);
+                }
+
+                if (((distance > howCloseCharCanBeToTree) && (depth > 0)))
+                {
+                    transform.position =
+                        Vector3.MoveTowards(transform.position, _center.position, _speed * Time.deltaTime * depth);
+                }
             }
 
             transform.RotateAround(_center.position, Vector3.up, -horizontal * _speed);
-            
+
             var lookPosition = new Vector3(_center.position.x, transform.position.y, _center.position.z);
             transform.LookAt(lookPosition);
         }
