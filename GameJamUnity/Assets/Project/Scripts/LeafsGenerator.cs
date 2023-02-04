@@ -1,14 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Project.Scripts
 {
     public class LeafsGenerator : MonoBehaviour
     {
         [SerializeField] private GameObject _leafPrefab;
-        [SerializeField] private float _maxWidth;
-        [SerializeField] private float _minWidth;
+        [SerializeField] private float _maxAngel;
+        [SerializeField] private float _minAngel;
         [SerializeField] private float _betweenLeafsHeight;
         [SerializeField] private float _distanceFromTree;
         [SerializeField] private Transform _bottomPoint;
@@ -35,16 +34,30 @@ namespace Project.Scripts
         {
             float currentHeight = 0;
             float totalHeight = _topPoint.position.y - _bottomPoint.position.y;
-            GameObject lastLeaf = null;
-
+            var hasLastLeaf = false;
+            var lastAngle = 0f;
+            var randomBorder = 50;
+            
             while (currentHeight < totalHeight)
             {
                 currentHeight += _betweenLeafsHeight;
                 var spawnHeight = _bottomPoint.position.y + currentHeight;
+                var isSpawnInLeftSide = Random.Range(0, 100) > randomBorder;
 
-                var leaf = Instantiate(_leafPrefab);
-                leaf.transform.position = new Vector3(_distanceFromTree,spawnHeight,0);
-                transform.RotateAround(_centerPoint.position, Vector3.up, 1);
+                var leaf = Instantiate(_leafPrefab, this.transform);
+                var position = transform.position;
+                position.y = spawnHeight;
+                position.x += _distanceFromTree;
+                float angelRotate = 0;
+                if (hasLastLeaf)
+                {
+                    angelRotate = isSpawnInLeftSide ? lastAngle + _minAngel : lastAngle - _minAngel;
+                    randomBorder = isSpawnInLeftSide ? randomBorder + 10 : randomBorder - 10;
+                }
+                leaf.transform.position = position;
+                leaf.transform.RotateAround(_centerPoint.position, Vector3.up, angelRotate);
+                hasLastLeaf = true;
+                lastAngle = angelRotate;
             }
         }
     }
