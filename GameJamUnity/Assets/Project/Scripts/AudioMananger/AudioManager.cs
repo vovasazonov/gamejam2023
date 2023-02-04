@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using Project.Scripts.AudioMananger;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
     private static AudioManager _audioManager;
-    private static List<AudioSourceObject> _soundChoosedNow = new List<AudioSourceObject>();
+    private static Dictionary<string, AudioSourceObject> _soundChoosedNow = new();
     [SerializeField] private AudioSourceObject _audioSourcePrefab;
 
     public List<SoundByType> Clips;
@@ -32,7 +33,8 @@ public class AudioManager : MonoBehaviour
     public enum Sound
     {
         FirstPhaseBackgroundMusic,
-        SecondPhaseBackgroundMusic
+        SecondPhaseBackgroundMusic,
+        ThreeSecondsRemainSound
     }
 
     public void PlayAudio(Sound sound)
@@ -48,7 +50,10 @@ public class AudioManager : MonoBehaviour
 
         var audioSourceObject = Instantiate(_audioSourcePrefab);
         audioSourceObject.PlaySound(audioClip);
-        _soundChoosedNow.Add(audioSourceObject);
+        if (!_soundChoosedNow.ContainsKey(sound.ToString()))
+        {
+            _soundChoosedNow.Add(sound.ToString(), audioSourceObject);
+        }
     }
 
     public static void StopAllAudio()
@@ -57,7 +62,10 @@ public class AudioManager : MonoBehaviour
         {
             foreach (var element in _soundChoosedNow)
             {
-                element.StopSound();
+                if (element.Key != Sound.ThreeSecondsRemainSound.ToString())
+                {
+                    element.Value.StopSound();
+                }
             }
         }
     }
