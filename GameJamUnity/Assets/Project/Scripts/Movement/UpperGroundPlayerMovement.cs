@@ -47,6 +47,9 @@ namespace Project.Scripts.Movement
             // }
 
             transform.RotateAround(_center.position, Vector3.up, -horizontal * _speed);
+            
+            var lookPosition = new Vector3(_center.position.x, transform.position.y, _center.position.z);
+            transform.LookAt(lookPosition);
         }
 
         protected override void OnActivated()
