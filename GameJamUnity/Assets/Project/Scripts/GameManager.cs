@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Project.Scripts;
 using Project.Scripts.Movement;
@@ -6,6 +7,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<ChasingCamera> _chasingCameras;
+    public event Action Phase2Started;
+    
+    public static GameManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
@@ -43,5 +52,7 @@ public class GameManager : MonoBehaviour
         {
             element.ChangeCameraModeToSecondPhase();
         }
+        
+        Phase2Started?.Invoke();
     }
 }
