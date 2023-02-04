@@ -58,11 +58,11 @@ namespace Project.Scripts.Ui
 
         public void DoPauseGame()
         {
-            Debug.Log("in");
+            //Debug.Log("in");
 
             PausePanel.SetActive(true);
 
-            //Time.timeScale = 0;
+            Time.timeScale = 0;
         }
 
         public void DoGoBackToGame()
