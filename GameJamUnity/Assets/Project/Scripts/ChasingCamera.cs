@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ChasingCamera : MonoBehaviour
@@ -5,6 +6,16 @@ public class ChasingCamera : MonoBehaviour
     private int _currentCameraMode = 1;
 
     [SerializeField] private Transform _target;
+
+    public static ChasingCamera Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
 
     void Update()
     {
@@ -21,13 +32,13 @@ public class ChasingCamera : MonoBehaviour
         }
     }
 
-    private void ChangeCameraModeToSecondPhase()
-    {
-        _currentCameraMode = 2;
-    }
-
-    private void ChangeCameraModeToFirstPhase()
+    public void ChangeCameraModeToFirstPhase()
     {
         _currentCameraMode = 1;
+    }
+
+    public void ChangeCameraModeToSecondPhase()
+    {
+        _currentCameraMode = 2;
     }
 }

@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 5701823665477914410}
   - component: {fileID: 5701823665477914413}
   - component: {fileID: 5701823665477914412}
+  - component: {fileID: 6138917114496468704}
   m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
@@ -179,6 +180,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &6138917114496468704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5701823665477914415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab623d6a77a849789aa0566208ef2f21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _timerInput: {fileID: 5701823667050675198}
+  _timeViewText: {fileID: 5701823666458112059}
+  _volume: {fileID: 5701823666604743518}
 --- !u!1 &5701823665484818630
 GameObject:
   m_ObjectHideFlags: 0
@@ -607,7 +623,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5701823665860710931}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6138917114496468704}
+        m_TargetAssemblyTypeName: Project.Scripts.Ui.ActionsUi, Assembly-CSharp
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5701823665865585588
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,10 +1361,22 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6138917114496468704}
+        m_TargetAssemblyTypeName: Project.Scripts.Ui.ActionsUi, Assembly-CSharp
+        m_MethodName: UpdateVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5701823666813301927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1593,7 +1633,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5701823666956370053}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6138917114496468704}
+        m_TargetAssemblyTypeName: Project.Scripts.Ui.ActionsUi, Assembly-CSharp
+        m_MethodName: PauseGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5701823667050675136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1720,14 +1772,14 @@ MonoBehaviour:
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
   m_ScrollSensitivity: 1
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
   m_HideSoftKeyboard: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 2
   m_RegexValue: 
   m_GlobalPointSize: 14
   m_CharacterLimit: 0
@@ -1751,7 +1803,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6138917114496468704}
+        m_TargetAssemblyTypeName: Project.Scripts.Ui.ActionsUi, Assembly-CSharp
+        m_MethodName: UpdateTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2486,4 +2550,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5701823667386505768}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6138917114496468704}
+        m_TargetAssemblyTypeName: Project.Scripts.Ui.ActionsUi, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

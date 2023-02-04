@@ -18,6 +18,8 @@ namespace Project.Scripts.AudioMananger
         {
             if (_isStartedPlaying)
             {
+                _audioSourceComponent.volume = AudioManager.Instance.Volume;
+
                 if (!_audioSourceComponent.isPlaying)
                 {
                     Destroy(this);
