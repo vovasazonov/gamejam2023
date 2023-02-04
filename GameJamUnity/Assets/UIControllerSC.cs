@@ -4,11 +4,16 @@ using System.Reflection;
 using UnityEngine;
 using UnityEditor.UI;
 using UnityEditor.UIElements;
+using TMPro;
 
 public class UIControllerSC : MonoBehaviour
 {
     [SerializeField] GameObject PausePanel;
-    
+    [SerializeField] GameObject WinPanel;
+
+    [SerializeField] TextMeshProUGUI winnerNameTMP;
+    [SerializeField] TextMeshProUGUI loserNameTMP;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +40,14 @@ public class UIControllerSC : MonoBehaviour
         PausePanel.SetActive(false);
 
         Time.timeScale = 1;
+    }
+
+    public void DoShowEndGameScreen(string winName, string loseName)
+    {
+        WinPanel.SetActive(true);
+
+        winnerNameTMP.text = winName;
+        loserNameTMP.text = loseName;
     }
 
     public void DoQuitGame()

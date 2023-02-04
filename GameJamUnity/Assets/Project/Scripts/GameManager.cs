@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<ChasingCamera> _chasingCameras;
     public event Action Phase2Started;
+
+    [SerializeField] UIControllerSC uiControl;
     
     public static GameManager Instance { get; private set; }
 
@@ -55,4 +57,10 @@ public class GameManager : MonoBehaviour
         
         Phase2Started?.Invoke();
     }
+
+    void DoEndGameSequance()
+    {
+        uiControl.DoShowEndGameScreen("P@", "P%");
+    }
+
 }
