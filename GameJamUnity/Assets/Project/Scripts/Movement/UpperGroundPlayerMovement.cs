@@ -34,10 +34,6 @@ namespace Project.Scripts.Movement
         {
             _camera.ChangeCameraModeToSecondPhase();
         }
-
-        private void Start()
-        {
-            SetActiveUpperGround(true);
-        }
+        
     }
 }
