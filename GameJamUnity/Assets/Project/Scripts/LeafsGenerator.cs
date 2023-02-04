@@ -57,7 +57,7 @@ namespace Project.Scripts
                     var rand = Random.Range(0, totalPoints);
                     var angel = rand < myPoints ? _minAngel : _maxAngel;
 
-                    angelRotate = isSpawnInLeftSide ? lastAngle + angel : lastAngle - angel;
+                    angelRotate = isSpawnInLeftSide ? lastAngle - angel : lastAngle + angel;
                     randomBorder = isSpawnInLeftSide ? randomBorder + 10 : randomBorder - 10;
                 }
                 leaf.transform.position = position;
