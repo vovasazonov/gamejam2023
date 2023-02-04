@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 namespace Project.Scripts.Movement
@@ -5,6 +6,8 @@ namespace Project.Scripts.Movement
     public class UnderGroundPlayerMovement : PlayerMovement
     {
         [SerializeField] private Rigidbody _rigidbody;
+        [SerializeField] private ChasingCamera _camera;
+
 
         protected override void Move()
         {
@@ -19,17 +22,19 @@ namespace Project.Scripts.Movement
 
             var input = new Vector3(horizontal, vertical, 0);
 
-            _rigidbody.MovePosition(transform.position + input.normalized * input.normalized.magnitude * _speed * Time.deltaTime);
+            _rigidbody.MovePosition(transform.position +
+                                    input.normalized * input.normalized.magnitude * _speed * Time.deltaTime);
         }
 
         protected override void OnActivated()
         {
             _rigidbody.useGravity = false;
+            _camera.ChangeCameraModeToFirstPhase();
         }
 
-        private void Start()
-        {
-            SetActiveUnderGround(true);
-        }
+        // private void Start()
+        // {
+        //     SetActiveUnderGround(true);
+        // }
     }
 }
