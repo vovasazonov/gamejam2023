@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8777225464359116249}
   - component: {fileID: 7334289964043566643}
   - component: {fileID: 4165449243657192130}
-  - component: {fileID: 519182745578318452}
   m_Layer: 0
   m_Name: Leaf_PlaceHolder
   m_TagString: Untagged
@@ -28,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 1265992963545320215}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -0.824, y: 0.711, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4023653144562809664}
@@ -85,20 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &519182745578318452
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1265992963545320215}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &5346742217432783761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -189,3 +174,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5346742217432783761}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4367703958320112122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8551845499304852075, guid: e1832ce726d6fc94aaf03e83ff66b2c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 5346742217432783761}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2432310080921539397
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4367703958320112122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.19128455, y: 0.18166578, z: 0}
+  m_Center: {x: -0.030751184, y: -0.06832759, z: -0.00077439856}
