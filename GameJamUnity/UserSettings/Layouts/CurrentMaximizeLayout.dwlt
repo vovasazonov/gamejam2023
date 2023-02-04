@@ -580,7 +580,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: -0.42033994, y: -0.57184786, z: 0.43184966, w: -0.55660677}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -3033,21 +3033,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Project/Prefabs
+    - Assets/Project/Prefabs/Items
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Project/Prefabs
+  - Assets/Project/Prefabs/Items
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/vladimir/Documents/repos/gamejam2023/GameJamUnity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 8c730000
-    m_LastClickedID: 29580
+    m_SelectedIDs: 9c730000
+    m_LastClickedID: 29596
     m_ExpandedIDs: 0000000018720000527300008c7300009073000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
