@@ -6,6 +6,7 @@ namespace Project.Scripts.Movement
     public class UpperGroundPlayerMovement : PlayerMovement
     {
         [SerializeField] private Transform _center;
+        [SerializeField] private Transform _startPosition;
         [SerializeField] private ChasingCamera _camera;
         [SerializeField] private Rigidbody _rigidbody;
 
@@ -33,7 +34,7 @@ namespace Project.Scripts.Movement
         protected override void OnActivated()
         {
             _camera.ChangeCameraModeToSecondPhase();
+            _rigidbody.MovePosition(_startPosition.position);
         }
-        
     }
 }
