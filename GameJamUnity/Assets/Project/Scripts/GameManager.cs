@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        AudioManager.Instance.PlayAudio(AudioManager.Sound.FirstPhaseBackgroundMusic);
         Timer.Instance.StartTimer();
         SetActivePhase1();
         Timer.Instance.TimeOver += OnTimeOver;
@@ -22,19 +21,22 @@ public class GameManager : MonoBehaviour
 
     private void SetActivePhase1()
     {
+        AudioManager.StopAllAudio();
+        AudioManager.Instance.PlayAudio(AudioManager.Sound.FirstPhaseBackgroundMusic);
         PlayerMovement.SetActiveUpperGround(false);
         PlayerMovement.SetActiveUnderGround(true);
         foreach (var element in _chasingCameras)
         {
             element.ChangeCameraModeToFirstPhase();
         }
-    
     }
 
     private void SetActivePhase2()
     {
+        AudioManager.StopAllAudio();
+
+        AudioManager.Instance.PlayAudio(AudioManager.Sound.SecondPhaseBackgroundMusic);
         LeafsGenerator.StartGenerate();
-        ;
         PlayerMovement.SetActiveUnderGround(false);
         PlayerMovement.SetActiveUpperGround(true);
         foreach (var element in _chasingCameras)

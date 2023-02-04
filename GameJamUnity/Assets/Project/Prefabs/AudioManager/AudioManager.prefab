@@ -50,6 +50,8 @@ MonoBehaviour:
   Clips:
   - Sound: 0
     Clip: {fileID: 8300000, guid: 3d8ea8fa89f753142b7934c9cb4be467, type: 3}
+  - Sound: 0
+    Clip: {fileID: 8300000, guid: 3d8ea8fa89f753142b7934c9cb4be467, type: 3}
 --- !u!81 &8339760638639526235
 AudioListener:
   m_ObjectHideFlags: 0

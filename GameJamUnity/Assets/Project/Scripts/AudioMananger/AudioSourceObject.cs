@@ -14,6 +14,11 @@ namespace Project.Scripts.AudioMananger
             _isStartedPlaying = true;
         }
 
+        public void StopSound()
+        {
+            _audioSourceComponent.Stop();
+        }
+
         private void Update()
         {
             if (_isStartedPlaying)
