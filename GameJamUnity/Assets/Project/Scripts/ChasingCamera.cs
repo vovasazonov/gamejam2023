@@ -3,7 +3,7 @@ using UnityEngine;
 public class ChasingCamera : MonoBehaviour
 {
     [SerializeField] private Transform _target;
-    
+
 
     public void ChangeCameraModeToSecondPhase()
     {
@@ -15,6 +15,8 @@ public class ChasingCamera : MonoBehaviour
 
     public void ChangeCameraModeToFirstPhase()
     {
-        transform.position = new Vector3(_target.transform.position.x, _target.transform.position.y, -10);
+        transform.position = new Vector3(_target.transform.position.x, _target.transform.position.y,
+            _target.transform.position.y - 10);
+        transform.rotation = new Quaternion(0, 0, 0, 0);
     }
 }
