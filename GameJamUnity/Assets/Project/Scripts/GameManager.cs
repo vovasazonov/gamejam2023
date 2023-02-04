@@ -1,8 +1,11 @@
+using System.Collections.Generic;
 using Project.Scripts.Movement;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    [SerializeField] private List<ChasingCamera> _chasingCameras;
+
     private void Start()
     {
         AudioManager.Instance.PlayAudio(AudioManager.Sound.FirstPhaseBackgroundMusic);
@@ -16,17 +19,23 @@ public class GameManager : MonoBehaviour
         SetActivePhase2();
     }
 
-    private static void SetActivePhase1()
+    private void SetActivePhase1()
     {
         PlayerMovement.SetActiveUnderGround(true);
         // PlayerMovement.SetActiveUpperGround(false);
-        ChasingCamera.Instance.ChangeCameraModeToFirstPhase();
+        foreach (var element in _chasingCameras)
+        {
+            element.ChangeCameraModeToFirstPhase();
+        }
     }
-    
-    private static void SetActivePhase2()
+
+    private void SetActivePhase2()
     {
         PlayerMovement.SetActiveUnderGround(false);
         // PlayerMovement.SetActiveUpperGround(true);
-        ChasingCamera.Instance.ChangeCameraModeToSecondPhase();
+        foreach (var element in _chasingCameras)
+        {
+            element.ChangeCameraModeToSecondPhase();
+        }
     }
 }
