@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using Vector3 = UnityEngine.Vector3;
 
@@ -7,6 +8,9 @@ namespace Project.Scripts.Movement
     {
         // private float howFarCharCanBeFromTree = 10;
         // private float howCloseCharCanBeToTree = 0.5f;
+
+        private bool _isGrounded;
+        [SerializeField] private float _jumpForce;
 
         [SerializeField] private Transform _center;
         [SerializeField] private Transform _startPosition;
@@ -23,6 +27,12 @@ namespace Project.Scripts.Movement
             var depth =
                 PlayerInputService.IsDownPressing(_playerType) ? -1 :
                 PlayerInputService.IsUpPressing(_playerType) ? 1 : 0;
+
+            var jump = PlayerInputService.IsActionPressing(_playerType);
+            if (jump & _isGrounded)
+            {
+                _rigidbody.AddForce(new Vector3(0, _jumpForce, 0), ForceMode.Impulse);
+            }
 
 // undone code(borders for movement forword and back
             // if (depth != 0)
@@ -43,8 +53,17 @@ namespace Project.Scripts.Movement
         {
             _camera.ChangeCameraModeToSecondPhase();
             transform.position = _startPosition.position;
+            _rigidbody.useGravity = true;
         }
 
-   
+        private void OnCollisionEnter(Collision collision)
+        {
+            _isGrounded = true;
+        }
+
+        private void OnCollisionExit(Collision other)
+        {
+            _isGrounded = false;
+        }
     }
 }
