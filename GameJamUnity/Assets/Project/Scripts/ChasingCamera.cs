@@ -16,7 +16,7 @@ public class ChasingCamera : MonoBehaviour
     public void ChangeCameraModeToFirstPhase()
     {
         transform.position = new Vector3(_target.transform.position.x, _target.transform.position.y,
-            _target.transform.position.y - 10);
+            _target.transform.position.y);
         transform.rotation = new Quaternion(0, 0, 0, 0);
     }
 }
