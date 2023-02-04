@@ -226,7 +226,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 786f0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 76c0f8ff70c3f8ff52c4f8ff6894f9ff6297f9ff4498f9ff649ff9ff3ec9f9ff32caf9ff78e5f9ffbc63faff38e3faff42e3faff9633fbffa633fbffae33fbff6834fbff4238fbff4438fbff6c53fbffd0b2fbffe467fcff4ca8fcfffca9fcff74f8fdff02fcfdfff4fcfdffd6dcfffff0f6ffff14faffff32faffff16fbffff80f001009cf00100bc360200d8360200
       m_RenameOverlay:
@@ -3033,21 +3033,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Project/Prefabs/Items
+    - Assets/Project/Prefabs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Project/Prefabs/Items
+  - Assets/Project/Prefabs
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/vladimir/Documents/repos/gamejam2023/GameJamUnity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 9c730000
-    m_LastClickedID: 29596
+    m_SelectedIDs: 8c730000
+    m_LastClickedID: 29580
     m_ExpandedIDs: 0000000018720000527300008c7300009073000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -3101,9 +3101,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 786f0000
-    m_LastClickedInstanceID: 28536
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000e27d00004a730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
