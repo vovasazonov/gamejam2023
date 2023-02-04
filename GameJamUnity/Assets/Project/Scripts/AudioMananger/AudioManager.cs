@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSourceObject _audioSourcePrefab;
 
     public List<SoundByType> Clips;
+    public float Volume { get; set; } = 1;
 
     public static AudioManager Instance => _audioManager;
 

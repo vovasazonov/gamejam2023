@@ -10,6 +10,18 @@ public class Timer : MonoBehaviour
     private float _timePassed;
     [SerializeField] private float _timeShouldPass;
 
+    private static Timer _instance;
+
+    public static Timer Instance => _instance;
+    
+    private void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+        }
+    }
+
     void Update()
     {
         if (_isTimerStarted)
@@ -33,5 +45,10 @@ public class Timer : MonoBehaviour
     {
         int timeLast = (_timeShouldPass - _timePassed).ConvertTo<int>();
         return timeLast;
+    }
+
+    public void SetTime(int seconds)
+    {
+        _timeShouldPass = seconds;
     }
 }
