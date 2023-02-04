@@ -47,11 +47,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Clip: 0.8
-    - _Grow: 0
+    - _Clip: 1
+    - _Grow: 1.1
     - _QueueControl: 0
     - _QueueOffset: 1
-    - _Scale: -2.1
+    - _Scale: 2.64
     - _Smoothness: 0.86
     m_Colors:
     - _Vector3: {r: 0, g: 0, b: 0, a: 0}
