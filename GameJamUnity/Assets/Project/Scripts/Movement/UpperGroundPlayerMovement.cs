@@ -33,18 +33,12 @@ namespace Project.Scripts.Movement
             {
                 _rigidbody.AddForce(new Vector3(0, _jumpForce, 0), ForceMode.Impulse);
             }
-
-// undone code(borders for movement forword and back
-            // if (depth != 0)
-            // {
-            //     if (((Vector3.Distance(_center.position, transform.position) < howFarCharCanBeFromTree) & depth > 0) |
-            //         ((Vector3.Distance(_center.position, transform.position) > howCloseCharCanBeToTree) & depth < 0)) ;
-            //     {
-            //     }
-            //
-            //     transform.position =
-            //         Vector3.MoveTowards(transform.position, _center.position, _speed * Time.deltaTime * depth);
-            // }
+            
+            if (depth != 0)
+            {
+                transform.position =
+                    Vector3.MoveTowards(transform.position, _center.position, _speed * Time.deltaTime * depth);
+            }
 
             transform.RotateAround(_center.position, Vector3.up, -horizontal * _speed);
             
